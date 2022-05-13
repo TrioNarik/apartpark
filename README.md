@@ -11,9 +11,9 @@ Zadanie testowe: ApartPark
     </ul></li>
   <li>Strona statyczna:
     <ul>
-      <li>belka nawigacyjna i sekcja header (podobny element jak na stronie głównej)</li>
-      <li>treść podstrony (przykład nagłówka, tekstu, zdjęcie i lista)</li>
-      <li>stopka (ten sam element, co na stronie głównej)</li>
+      <li>belka nawigacyjna i sekcja header</li>
+      <li>treść podstrony</li>
+      <li>stopka</li>
     </ul></li>
   </ul>
 
