@@ -1,5 +1,5 @@
 # apartpark
-Zadanie testowe: AprtPark
+Zadanie testowe: ApartPark
 ---
 <ul>
   <li>Strona główna
