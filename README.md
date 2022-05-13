@@ -16,5 +16,5 @@ Zadanie testowe: AprtPark
       <li>stopka (ten sam element, co na stronie głównej)</li>
     </ul></li>
   </ul>
----
-✅ Projekt graficzny: <a href="https://mailtrack.io/trace/link/1372b7ffae1b6ab5421ac53480c7ce72ac2bdae7?url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlC2E8yKyb5SwyrV2tshqHf%2FRekrutacja-dev%3Fnode-id%3D0%253A1&userId=6566920&signature=1f0af8aa345192fd">Figmie (desktop i mobile)</a>
+
+✅ Projekt graficzny: <a href="https://mailtrack.io/trace/link/1372b7ffae1b6ab5421ac53480c7ce72ac2bdae7?url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlC2E8yKyb5SwyrV2tshqHf%2FRekrutacja-dev%3Fnode-id%3D0%253A1&userId=6566920&signature=1f0af8aa345192fd">Figma (desktop i mobile)</a>
