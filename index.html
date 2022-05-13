@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApartPark - zadanie testowe</title>
+
+    <link href="src/setting.css" rel="stylesheet" type="text/css">
+    <link href="src/style.css" rel="stylesheet" type="text/css">
+    <link href="src/glider.css" rel="stylesheet" type="text/css">
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Calendar jQuery -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/polish.js"></script>
+    <script>
+        $(function () {
+            // Calendar
+            $(".datepicker").datepicker({
+                dateFormat: "dd.mm",
+                altField: "#alternate",
+                altFormat: "dd.mm"
+            });
+
+            // Dropdown section hover Lang
+            $('.drop').hover(function () {
+                $('ul.dropdown').toggleClass('visible');
+            });
+
+            // Drop Menu Mobile
+            $('.dropUp').click(function () {
+                $('.dropdown--menu-mobile').toggleClass('show');
+            });
+
+            // Cookies
+            $("#hide").click(function () {
+                $(".cookies").slideToggle();
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <section class="container bg-photo">
+
+        <header class="border flex space">
+            <div class="flex align-end">
+                <div class="logo">
+                    <a class="navbar-brand" href="."><img src="img/logo-apartpark.png" alt="Logo" /></a>
+                </div>
+
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="strona.html" class="nav-link">Apartamenty</a></li>
+                        <li class="nav-item"><a href="strona.html" class="nav-link">Galeria</a></li>
+                        <li class="nav-item"><a href="strona.html" class="nav-link">Opinie</a></li>
+                        <li class="nav-item"><a href="strona.html" class="nav-link">Poznaj Apartpark</a></li>
+                        <li class="nav-item"><a href="strona.html" class="nav-link">Atrakcje</a></li>
+                        <li class="nav-item"><a href="strona.html" class="nav-link">Kontakt</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="calendar flex align-end">
+
+                <div class="frameBox">
+                    <input type="text" name="from" value="15.02" class="datepicker">
+                    <img src="img/arrow_right.png" alt="" />
+                    <input type="text" name="to" value="17.02" class="datepicker" id="alternate">
+                </div>
+                <div class="submit">
+                    <h6>Gwarancja najniższej ceny!</h6>
+                    <button type="submit" class="btn btn-white">Rezerwuj online</button>
+                </div>
+
+                <ul class="lang">
+                    <li class="drop"><a class="icon" href="#">pl</a>
+                        <ul class="dropdown">
+                            <li><a href="#">en</a></li>
+                            <li><a href="#">de</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </header>
+
+
+        <div class="header--topic">
+            <h4>Apartamenty Świnoujście</h4>
+            <h1>Doskonale zaplanowany wypoczynek</h1>
+        </div>
+
+        <div class="circle">
+            <div class="circle--ring"></div>
+            <div class="circle--link">
+                <a href="#">Odkryj apartpark</a>
+            </div>
+        </div>
+
+        <div class="header--topic-social flex">
+            <div class="social">
+                <a href="#"><img src="img/facebook.png" alt="FB" /></a>
+            </div>
+            <div class="social">
+                <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+            </div>
+            <div class="social">
+                <a href="#"><img src="img/ytb.png" alt="YT" /></a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <main class="container gradient">
+
+        <div class="page">
+
+            <section class="flex space discovery">
+                <article class="col30">
+                    <h5>Komfortowy wypoczynek</h5>
+                    <h2>Odkryj Apartpark</h2>
+                    <p>Zobacz apartamenty w pierwszej linii nadmorskiej zabudowy. Każdy z nich przygotowaliśmy z myślą o
+                        Twoich wakacjach. Dlatego oferujemy również wyżywienie na miejscu oraz usługę hotelową w
+                        standardzie</p>
+                    <div class="more">
+                        <a href="strona.html">o nas</a>
+                    </div>
+                </article>
+                <aside>
+                    <div class="discovery--photo">
+                        <img src="img/hotel_homepage.png" alt="Hotel" />
+                    </div>
+                    <div class="discovery--video">
+                        <img src="img/video_homepage.png" alt="Video" />
+                        <div class="discovery--video__link">
+                            <a href="#">Zobacz film</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+
+            <section class="flex space content">
+                <article class="col30">
+                    <h3>Doskonała lokalizacja</h3>
+                    <p>Szum fal i odgłosy mew na rozgrzanej słońcem plaży to Twoje wymarzone wakacje. Aby były idealne,
+                        potrzebujesz tylko luksusowego apartamentu, położonego nad samym morzem. Dokładnie: 300 metrów
+                        od plaży.</p>
+                </article>
+                <article class="col30">
+                    <h3>Pełny komfort</h3>
+                    <p>Wśród 370 apartamentów znajdziesz swój wymarzony z przestronną sypialnią i w pełni wyposażonym
+                        aneksem kuchennym. Zapraszamy do strefy relaksu na terenie obiektu oraz naszej wyjątkowej
+                        restauracji Sofa Cafe i polecanej restauracji Sofa Bistro.</p>
+                </article>
+                <article class="col30">
+                    <h3>Idealne wakacje</h3>
+                    <p>Czekają na Ciebie czysta plaża w Świnoujściu oraz wiele innych atrakcji: od interesujących
+                        obiektów historycznych po możliwość uprawiania sportów ekstremalnych. A wszystko to tuż nad
+                        polskim morzem.</p>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+    <section class="container navy-bg">
+        <div class="page">
+            <h5>Funkcjonalne i luksusowe</h5>
+            <h2>Nadmorskie apartamenty Apartpark</h2>
+            <p class="col50">Zobacz apartamenty z widokiem na morze. Każdy jest komfortowy, ale również funkcjonalny.
+                Przygotowany z myślą o rodzinach z dziećmi oraz Gościach, którzy doceniają wnętrza urządzone w
+                nowoczesnym stylu.</p>
+        </div>
+    </section>
+    <section class="navy-bg slider">
+        <div class="glider-contain">
+            <div class="glider flex">
+                <div class="glider-slide">
+                    <img src="img/slider1.png" />
+                    <div class="pad-2">
+                        <h3>Apartament Rubus 401</h3>
+                        <p>2 osoby / 1 sypialnia / 40 m2</p>
+                        <small>*Śniadanie wliczone w cenę</small>
+                        <p><a href="strona.html">Zobacz apartament</a></p>
+                    </div>
+                </div>
+                <div class="glider-slide">
+                    <img src="img/slider2.png" />
+                    <div class="pad-2">
+                        <h3>Apartament Rubus 401</h3>
+                        <p>2 osoby / 1 sypialnia / 40 m2</p>
+                        <small>*Śniadanie wliczone w cenę</small>
+                        <p><a href="strona.html">Zobacz apartament</a></p>
+                    </div>
+                </div>
+                <div class="glider-slide">
+                    <img src="img/slider1.png" />
+                    <div class="pad-2">
+                        <h3>Apartament Rubus 401</h3>
+                        <p>2 osoby / 1 sypialnia / 40 m2</p>
+                        <small>*Śniadanie wliczone w cenę</small>
+                        <p><a href="strona.html">Zobacz apartament</a></p>
+                    </div>
+                </div>
+                <div class="glider-slide">
+                    <img src="img/slider2.png" />
+                    <div class="pad-2">
+                        <h3>Apartament Rubus 401</h3>
+                        <p>2 osoby / 1 sypialnia / 40 m2</p>
+                        <small>*Śniadanie wliczone w cenę</small>
+                        <p><a href="strona.html">Zobacz apartament</a></p>
+                    </div>
+                </div>
+                <div class="glider-slide">
+                    <img src="img/slider1.png" />
+                    <div class="pad-2">
+                        <h3>Apartament Rubus 401</h3>
+                        <p>2 osoby / 1 sypialnia / 40 m2</p>
+                        <small>*Śniadanie wliczone w cenę</small>
+                        <p><a href="strona.html">Zobacz apartament</a></p>
+                    </div>
+                </div>
+                <div class="glider-slide">
+                    <img src="img/slider2.png" />
+                    <div class="pad-2">
+                        <h3>Apartament Rubus 401</h3>
+                        <p>2 osoby / 1 sypialnia / 40 m2</p>
+                        <small>*Śniadanie wliczone w cenę</small>
+                        <p><a href="strona.html">Zobacz apartament</a></p>
+                    </div>
+                </div>
+                <div class="glider-slide">
+                    <img src="img/slider2.png" />
+                    <div class="pad-2">
+                        <h3>Apartament Rubus 401</h3>
+                        <p>2 osoby / 1 sypialnia / 40 m2</p>
+                        <small>*Śniadanie wliczone w cenę</small>
+                        <p><a href="strona.html">Zobacz apartament</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <button aria-label="Next" class="glider-next"></button>
+            <button aria-label="Previous" class="glider-prev"></button>
+
+            <div role="tablist" class="dots"></div>
+        </div>
+    </section>
+    <section class="container navy-bg">
+        <div class="page-slider">
+            <div class="more">
+                <a href="strona.html">Wszystkie apartamenty</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container posts">
+        <div class="page">
+            <h5>Atrakcje Świnoujścia</h5>
+            <h2>Inspiracje dla Ciebie</h2>
+            <p class="col50">Poznaj najlepsze atrakcje Świnoujścia i okolic. Dowiedz się, jak aktywnie spędzać wakacje
+                nad morzem. Zobacz miejsca, które warto odwiedzić. Sprawdź, jak urozmaicić wypoczynek dzieciom.
+                Zainspiruj się!</p>
+
+            <div class="more">
+                <a href="strona.html">Wszystkie artykuły</a>
+            </div>
+
+            <div class="flex space">
+                <article class="col32">
+                    <div class="posts--img">
+                        <img src="img/article1.jpg" />
+                        <div class="posts--link">
+                            <a href="#"><img src="img/button_arrow.png" /></a>
+                        </div>
+                    </div>
+                    <div class="article--date">
+                        <p><time datetime="2022-02-21 19:00">21/02/2022</time></p>
+                    </div>
+                    <p>Pierwsza linia zabudowy, czyli niecałe 300m - zaledwie tyle dzieli Cię od wypoczynku na naszej
+                        prywatnej plaży [...] <a href="#">Czytaj więcej</a></p>
+                </article>
+                <article class="col32">
+                    <div class="posts--img">
+                        <img src="img/article2.jpg" />
+                        <div class="posts--link">
+                            <a href="#"><img src="img/button_arrow.png" /></a>
+                        </div>
+                    </div>
+                    <div class="article--date">
+                        <p><time datetime="2022-02-21 19:00">21/02/2022</time></p>
+                    </div>
+                    <p>Pierwsza linia zabudowy, czyli niecałe 300m - zaledwie tyle dzieli Cię od wypoczynku na naszej
+                        prywatnej plaży [...] <a href="#">Czytaj więcej</a></p>
+                </article>
+                <article class="col32">
+                    <div class="posts--img">
+                        <img src="img/article3.jpg" />
+                        <div class="posts--link">
+                            <a href="#"><img src="img/button_arrow.png" /></a>
+                        </div>
+                    </div>
+                    <div class="article--date">
+                        <p><time datetime="2022-02-21 19:00">21/02/2022</time></p>
+                    </div>
+                    <p>Pierwsza linia zabudowy, czyli niecałe 300m - zaledwie tyle dzieli Cię od wypoczynku na naszej
+                        prywatnej plaży [...] <a href="#">Czytaj więcej</a></p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container bg-footer">
+        <section class="footer">
+            <div class="logo hiding center">
+                <a class="navbar-brand" href="."><img src="img/logo-apartpark.png" alt="Logo" /></a>
+            </div>
+            <div class="footer--topic">
+                <h2>ApartPark<br />Adres Baltic Home S.C.</h2>
+                <p>ul. Uzdrowiskowa 48, 72-600 Świnoujście</p>
+            </div>
+            <ul class="hiding flex center">
+                <li class="social"><a href="#"><img src="img/facebook.png" alt="FB" /></a></li>
+                <li class="social"><a href="#"><img src="img/instagram.png" alt="Instagram" /></a></li>
+                <li class="social"><a href="#"><a href="#"><img src="img/ytb.png" alt="YT" /></a></li>
+            </ul>
+
+            <div class="flex space border-top">
+                <div class="col30">
+                    <h3 class="hide-mobile">Odkryj Apartpark</h3>
+                    <ul>
+                        <li><a href="#">Poznaj Apartpark</a></li>
+                        <li><a href="#">Znajdź apartament</a></li>
+                        <li><a href="#">Zarezerwuj pobyt</a></li>
+                        <li><a href="#">Sofa Bistro</a></li>
+                        <li><a href="#">Sofa Cafe</a></li>
+                    </ul>
+                </div>
+                <div class="col30">
+                    <h3 class="hide-mobile">Odkryj Apartpark</h3>
+                    <ul>
+                        <li><a href="#">Atrakcje</a></li>
+                        <li><a href="#">Współpraca</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div id="full" class="col30">
+                    <h3>Czekamy na Ciebie</h3>
+                    <input type="text" name="name" placeholder="Imię i nazwisko">
+                    <input type="text" name="email" placeholder="Adres e-mail lub nr telefonu">
+                    <textarea name="message" placeholder="Wiadomość" rows="4"></textarea>
+                    <button type="submit" class="btn">wyślij wiadomość</button>
+                </div>
+
+            </div>
+
+            <div class="border-top" id="empty">
+                <div class="flex space">
+                    <div class="hide-mobile flex">
+                        <div class="social">
+                            <a href="#"><img src="img/facebook.png" alt="FB" /></a>
+                        </div>
+                        <div class="social">
+                            <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+                        </div>
+                        <div class="social">
+                            <a href="#"><img src="img/ytb.png" alt="YT" /></a>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        2022 © Made with love by <a href="#">hotelwsieci.pl</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </footer>
+
+    <!--- MENU MOBILE -->
+    <nav class="navbar-mobile">
+        <ul class="mobile flex space">
+            <li class="icon"><a href="#"><span>Kontakt</span><span><img src="img/icon_phone.png" alt="EN" /></span></a>
+            </li>
+            <li class="icon booking"><a href="#"><span>Rezerwuj</span><span><img src="img/icon_booking.png"
+                            alt="EN" /></span></a></li>
+            <li class="icon dropUp"><a href="javascript:void(0)"><span>Menu</span><span><img
+                            src="img/icon_menu_close.png" alt="EN" /></a>
+                <div class="dropdown--menu-mobile">
+                    <ul class="lang-mobile flex start">
+                        <li><a href="#"><img src="img/flag_pl.png" alt="PL" /></a>
+                        <li class="social"><a href="#"><img src="img/flag_en.png" alt="EN" /></a></li>
+                        <li class="social"><a href="#"><img src="img/flag_de.png" alt="DE" /></a></li>
+                    </ul>
+                    <ul class="nav-menu-mobile">
+                        <li class="nav-item-mobile"><a href="strona.html" class="nav-link">Poznaj Apartpark</a></li>
+                        <li class="nav-item-mobile"><a href="strona.html" class="nav-link">Znajdź apartament</a></li>
+                        <li class="nav-item-mobile"><a href="strona.html" class="nav-link">Zarezerwuj pobyt</a></li>
+                        <li class="nav-item-mobile"><a href="strona.html" class="nav-link">Sofa Bistro</a></li>
+                        <li class="nav-item-mobile"><a href="strona.html" class="nav-link">Sofa Cafe</a></li>
+                        <li class="nav-item-mobile"><a href="strona.html" class="nav-link">Atrakcje</a></li>
+                        <li class="nav-item-mobile"><a href="strona.html" class="nav-link">Współpraca</a></li>
+                        <li class="nav-item-mobile"><a href="strona.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item-mobile"><a href="strona.html" class="nav-link">Kontakt</a></li>
+                    </ul>
+                    <ul class="lang-mobile flex start">
+                        <li class="social"><a href="#"><img src="img/facebook.png" alt="FB" /></a></li>
+                        <li class="social"><a href="#"><img src="img/instagram.png" alt="Instagram" /></a></li>
+                        <li class="social"><a href="#"><a href="#"><img src="img/ytb.png" alt="YT" /></a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="cookies">Ta strona używa plików cookies. Aby dowiedzieć się więcej zobacz naszą Politykę Prywatności. <a
+            id="hide" href="javascript:void(0)">&#10006;</a></div>
+
+
+    <!-- Slider Glider -->
+    <script src="js/glider.min.js"></script>
+    <script src="js/glider-setting.js"></script>
+</body>
+
+</html>
